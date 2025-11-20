@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gothami Abewardana — Portfolio</title>
+  <meta name="description" content="Portfolio of Gothami Abewardana — Web developer">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#2563eb;--muted:#94a3b8;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;color:#e6eef8;background:linear-gradient(180deg,#071126 0%, #071b2b 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .right{order:2}}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .section{margin-bottom:18px}
+    h2{margin:0 0 10px;font-size:18px}
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0}
+    ul.skills li{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .projects .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));margin-bottom:10px}
+    .proj a{color:var(--accent);text-decoration:none}
+    .cta{display:flex;gap:8px;margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));color:white;text-decoration:none}
+    .primary{background:linear-gradient(90deg,var(--accent),#7c3aed);box-shadow:0 6px 18px rgba(37,99,235,0.18)}
+    footer{color:var(--muted);text-align:center;margin-top:28px;font-size:14px}
+    .contact p{margin:6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+    .timeline{display:flex;flex-direction:column;gap:10px}
+    .job{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02)}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">GA</div>
+      <div>
+        <h1>Gothami Abewardana</h1>
+        <p class="lead">Web Developer • BSc (Hons) Software Engineering — Frontend & PHP developer</p>
+        <p class="meta">Mulendiyawala, Sri Lanka • <a href="mailto:maduabewardana98@gmail.com" style="color:inherit;text-decoration:underline">maduabewardana98@gmail.com</a> • <a href="https://www.linkedin.com/in/gothami-abewardana-694061255/" target="_blank" style="color:inherit;text-decoration:underline">LinkedIn</a></p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card section about">
+          <h2>About</h2>
+          <p>I am a dedicated IT graduate (BSc Hons – Software Engineering) with hands-on experience building responsive websites using HTML, CSS, JavaScript, PHP and MySQL. I enjoy creating accessible learning platforms and travel websites that focus on usability and SEO.</p>
+          <div class="cta">
+            <!-- NOTE: resume link points to the uploaded PDF path on the server. When publishing to GitHub, upload the PDF into the repo and change the href to the PDF file name. -->
+            <a class="btn primary" href="/mnt/data/GothamiAbewardana.pdf" target="_blank">Download CV (PDF)</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+        </section>
+
+        <section class="card section skills">
+          <h2>Key Skills</h2>
+          <ul class="skills">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Bootstrap</li>
+            <li>Responsive Design</li>
+            <li>SEO Basics</li>
+            <li>Firebase</li>
+          </ul>
+        </section>
+
+        <section class="card section projects">
+          <h2>Selected Projects</h2>
+
+          <div class="proj">
+            <strong>Hanwella Tours</strong>
+            <div class="small">Tourism website — responsive UI, listings & booking</div>
+            <div><a href="https://www.hanwellatours.lk" target="_blank">hanwellatours.lk</a></div>
+          </div>
+
+          <div class="proj">
+            <strong>Lanka Budget Tours</strong>
+            <div class="small">Tour & booking pages, contact form</div>
+            <div><a href="https://www.lankabudgettours.com" target="_blank">lankabudgettours.com</a></div>
+          </div>
+
+          <div class="proj">
+            <strong>Pearl Lanka Travels</strong>
+            <div class="small">Deployed company website with package listings</div>
+            <div><a href="https://pearllankatravels.com" target="_blank">pearllankatravels.com</a></div>
+          </div>
+
+          <div class="proj">
+            <strong>HiFly English</strong>
+            <div class="small">Responsive multilingual learning platform</div>
+            <div><a href="https://www.hiflyenglish.com" target="_blank">hiflyenglish.com</a></div>
+          </div>
+
+          <p class="small" style="margin-top:8px">More projects available on request — university thesis: adaptive activity-based learning platform with bilingual voice assistance and progress reporting.</p>
+        </section>
+
+        <section class="card section experience">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="job">
+              <strong>Web Developer — REAL POS (Pvt) Ltd</strong>
+              <div class="small">Mar 2024 – Sep 2024</div>
+              <div class="small">Worked on responsive web interfaces using HTML/CSS/JS and PHP; supported clients and documented project progress.</div>
+            </div>
+
+            <div class="job">
+              <strong>Intern / Projects</strong>
+              <div class="small">Multiple university & freelance projects — travel and e-learning websites.</div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside class="right">
+        <div class="card section contact" id="contact">
+          <h2>Contact</h2>
+          <p><strong>Email</strong><br><a href="mailto:maduabewardana98@gmail.com">maduabewardana98@gmail.com</a></p>
+          <p><strong>Phone</strong><br>+94 77 567 3773</p>
+          <p><strong>Location</strong><br>Mulendiyawala, Sri Lanka</p>
+
+          <h2 style="margin-top:12px">Education</h2>
+          <p class="small"><strong>BSc (Hons) Software Engineering</strong><br>CINEC Campus, Malabe — 2021–2025<br>Second Class (Upper)</p>
+
+          <h2 style="margin-top:12px">Technologies</h2>
+          <p class="small">Java · PHP · HTML/CSS/JS · Bootstrap · MySQL · Firebase · Postman</p>
+        </div>
+
+        <div class="card section" style="margin-top:12px">
+          <h2>Quick Links</h2>
+          <p class="small"><a href="https://www.linkedin.com/in/gothami-abewardana-694061255/" target="_blank">LinkedIn profile</a></p>
+          <p class="small"><a href="/mnt/data/GothamiAbewardana.pdf" target="_blank">Open Resume (server path)</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>Made with ❤️ • © Gothami Abewardana</div>
+      <div class="small" style="margin-top:8px">To publish: upload this file as <strong>index.html</strong> to a GitHub repo named <em>yourusername.github.io</em>. Also upload the PDF into the repo and change the resume links to the PDF file name so they work on the web.</div>
+    </footer>
+  </div>
+
+  <script>
+    // Small enhancements: smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){e.preventDefault();document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});});
+    });
+  </script>
+</body>
+</html>
